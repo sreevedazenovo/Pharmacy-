@@ -3135,5 +3135,430 @@ input {
 
 }  
     
+/* =========================================================
+   PART 5 : FINAL FEATURE BAR
+   ========================================================= */
 
+
+/* =========================================================
+   FINAL FEATURES SECTION
+   ========================================================= */
+
+.final-features-section {
+    width: 100%;
+
+    background: #078b2d;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   FINAL FEATURES CONTAINER
+   ========================================================= */
+
+.final-features-container {
+    width: 90%;
+    max-width: var(--container-width);
+
+    min-height: 72px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   FINAL FEATURE
+   ========================================================= */
+
+.final-feature {
+    min-height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.final-feature:last-child {
+    border-right: none;
+}
+
+
+/* =========================================================
+   FINAL FEATURE ICON
+   ========================================================= */
+
+.final-feature-icon {
+    width: 27px;
+    height: 27px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   GENUINE ICON
+   ========================================================= */
+
+.genuine-final-icon {
+    border: 1.4px solid #ffffff;
+
+    border-radius: 6px;
+}
+
+.genuine-final-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    left: 7px;
+    top: 4px;
+
+    border: 1px solid #ffffff;
+
+    border-radius: 50%;
+}
+
+.genuine-final-icon span {
+    position: absolute;
+
+    left: 8px;
+    bottom: 2px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DELIVERY ICON
+   ========================================================= */
+
+.delivery-final-icon {
+    width: 28px;
+    height: 17px;
+
+    margin-top: 4px;
+
+    border: 1.4px solid #ffffff;
+
+    border-radius: 3px;
+}
+
+.delivery-final-icon::before {
+    content: "";
+
+    position: absolute;
+
+    right: -7px;
+    bottom: -1px;
+
+    width: 8px;
+    height: 10px;
+
+    border: 1.4px solid #ffffff;
+
+    border-left: none;
+
+    border-radius: 0 3px 3px 0;
+}
+
+.delivery-final-icon::after {
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+    bottom: -6px;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        17px 0 0 #ffffff;
+}
+
+
+/* =========================================================
+   SECURE PAYMENT ICON
+   ========================================================= */
+
+.payment-final-icon {
+    border: 1.4px solid #ffffff;
+
+    border-radius: 5px;
+}
+
+.payment-final-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 9px;
+    height: 8px;
+
+    left: 7px;
+    top: -5px;
+
+    border: 1.4px solid #ffffff;
+
+    border-bottom: none;
+
+    border-radius: 7px 7px 0 0;
+}
+
+.payment-final-icon span {
+    position: absolute;
+
+    left: 9px;
+    top: 6px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RETURN ICON
+   ========================================================= */
+
+.return-final-icon {
+    border: 1.4px solid #ffffff;
+
+    border-radius: 5px;
+}
+
+.return-final-icon span {
+    font-size: 15px;
+
+    line-height: 1;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   SUPPORT ICON
+   ========================================================= */
+
+.support-final-icon {
+    border: 1.4px solid #ffffff;
+
+    border-radius: 50%;
+}
+
+.support-final-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 11px;
+
+    left: -3px;
+    top: 8px;
+
+    border: 1.4px solid #ffffff;
+
+    border-radius: 4px;
+}
+
+.support-final-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 11px;
+
+    right: -3px;
+    top: 8px;
+
+    border: 1.4px solid #ffffff;
+
+    border-radius: 4px;
+}
+
+.support-final-icon span {
+    position: absolute;
+
+    left: 8px;
+    top: 5px;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   FINAL FEATURE TEXT
+   ========================================================= */
+
+.final-feature-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.final-feature-text strong {
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.final-feature-text small {
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 7px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   FINAL BODY POLISH
+   ========================================================= */
+
+main {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+::selection {
+    background: #078b2d;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .final-features-container {
+        width: 92%;
+    }
+
+    .final-feature {
+        gap: 7px;
+    }
+
+    .final-feature-text strong {
+        font-size: 8px;
+    }
+
+    .final-feature-text small {
+        font-size: 6px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .final-features-container {
+        width: 92%;
+
+        min-height: auto;
+
+        padding: 18px 0;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 18px;
+    }
+
+    .final-feature {
+        min-height: 38px;
+
+        justify-content: flex-start;
+
+        padding-left: 10px;
+
+        border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .final-feature:nth-child(2n) {
+        border-right: none;
+    }
+
+    .final-feature:last-child {
+        grid-column: 1 / -1;
+
+        justify-content: center;
+
+        border-right: none;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .final-features-container {
+        width: 94%;
+
+        row-gap: 15px;
+    }
+
+    .final-feature {
+        gap: 7px;
+
+        padding-left: 4px;
+    }
+
+    .final-feature-icon {
+        transform: scale(0.9);
+    }
+
+    .final-feature-text strong {
+        font-size: 7px;
+    }
+
+    .final-feature-text small {
+        font-size: 6px;
+    }
+
+}
    
