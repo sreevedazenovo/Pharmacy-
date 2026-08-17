@@ -818,7 +818,689 @@ input {
 
 }
 
+/* =========================================================
+   PART 2 : HERO SECTION
+   ========================================================= */
 
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero-section {
+    width: 100%;
+
+    min-height: 410px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f8fbf9 0%,
+            #ffffff 48%,
+            #f3f8f4 100%
+        );
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.hero-container {
+    width: 90%;
+    max-width: var(--container-width);
+
+    min-height: 410px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   HERO LEFT CONTENT
+   ========================================================= */
+
+.hero-content {
+    width: 51%;
+
+    padding-top: 43px;
+    padding-left: 4px;
+    padding-bottom: 35px;
+
+    position: relative;
+    z-index: 3;
+}
+
+
+/* =========================================================
+   TRUST BADGE
+   ========================================================= */
+
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 6px 11px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4eee6;
+
+    border-radius: 20px;
+
+    color: #267c42;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    box-shadow: 0 2px 8px rgba(20, 80, 35, 0.04);
+}
+
+
+/* Shield */
+
+.trust-shield {
+    width: 13px;
+    height: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--green);
+
+    font-size: 9px;
+    font-weight: 700;
+
+    border: 1.4px solid var(--green);
+
+    border-radius: 7px 7px 8px 8px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.hero-title {
+    margin-top: 18px;
+
+    color: #101417;
+
+    font-size: 43px;
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+
+    font-weight: 700;
+}
+
+.hero-title span {
+    color: var(--green);
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.hero-description {
+    margin-top: 13px;
+
+    color: #555b5d;
+
+    font-size: 15px;
+    line-height: 1.55;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   HERO FEATURES
+   ========================================================= */
+
+.hero-features {
+    margin-top: 26px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 27px;
+}
+
+
+/* Individual feature */
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* Feature icon */
+
+.feature-icon {
+    width: 23px;
+    height: 23px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    color: var(--green);
+}
+
+
+/* =========================================================
+   GENUINE ICON
+   ========================================================= */
+
+.genuine-icon {
+    border: 1.5px solid var(--green);
+
+    border-radius: 6px;
+
+    transform: rotate(-5deg);
+}
+
+.genuine-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    top: 3px;
+    left: 6px;
+
+    border: 1px solid var(--green);
+
+    border-radius: 50%;
+}
+
+.genuine-icon span {
+    position: absolute;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    left: 7px;
+    bottom: 1px;
+}
+
+
+/* =========================================================
+   DELIVERY ICON
+   ========================================================= */
+
+.delivery-icon {
+    border: 1.5px solid var(--green);
+
+    border-radius: 3px;
+
+    width: 24px;
+    height: 14px;
+
+    margin-top: 2px;
+}
+
+.delivery-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 9px;
+
+    right: -7px;
+    bottom: -1px;
+
+    border: 1.5px solid var(--green);
+
+    border-left: none;
+
+    border-radius: 0 3px 3px 0;
+}
+
+.delivery-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    left: 3px;
+    bottom: -5px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    box-shadow: 14px 0 0 var(--green);
+}
+
+
+/* =========================================================
+   PAYMENT ICON
+   ========================================================= */
+
+.payment-icon {
+    border: 1.5px dashed var(--green);
+
+    border-radius: 50%;
+}
+
+.payment-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    left: 7px;
+    top: 5px;
+
+    border: 1px solid var(--green);
+
+    border-radius: 2px;
+}
+
+.payment-icon span {
+    position: absolute;
+
+    left: 8px;
+    top: 4px;
+
+    color: var(--green);
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FEATURE TEXT
+   ========================================================= */
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.feature-text strong {
+    color: #202020;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.feature-text small {
+    color: #6a6a6a;
+
+    font-size: 9px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SHOP NOW BUTTON
+   ========================================================= */
+
+.shop-now-button {
+    width: 132px;
+    height: 38px;
+
+    margin-top: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 14px 0 17px;
+
+    background: var(--green);
+
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    box-shadow: 0 4px 10px rgba(7, 139, 45, 0.15);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.shop-now-button:hover {
+    background: var(--green-dark);
+
+    transform: translateY(-1px);
+}
+
+.shop-arrow {
+    font-size: 18px;
+    font-weight: 300;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HERO IMAGE AREA
+   ========================================================= */
+
+.hero-image-area {
+    width: 49%;
+
+    position: relative;
+
+    min-height: 410px;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   PHARMACIST IMAGE
+   ========================================================= */
+
+.hero-image {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    right: -7%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+
+/* =========================================================
+   PRESCRIPTION CARD
+   ========================================================= */
+
+.prescription-card {
+    position: absolute;
+
+    right: -8px;
+    bottom: 30px;
+
+    width: 163px;
+
+    padding: 14px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid #e5e9e6;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 7px 25px rgba(0, 0, 0, 0.08);
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   PRESCRIPTION TOP
+   ========================================================= */
+
+.prescription-top {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+/* Prescription icon */
+
+.prescription-icon {
+    width: 27px;
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf7ed;
+
+    color: var(--green);
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+/* Prescription text */
+
+.prescription-heading {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.prescription-heading strong {
+    color: #1d1d1d;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.prescription-heading span {
+    color: #6a6a6a;
+
+    font-size: 8px;
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   UPLOAD BUTTON
+   ========================================================= */
+
+.upload-button {
+    height: 32px;
+
+    margin-top: 12px;
+
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f7faf7;
+
+    border: 1px solid #edf1ed;
+
+    border-radius: 5px;
+
+    color: #138333;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.upload-arrow {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-title {
+        font-size: 35px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-features {
+        gap: 14px;
+    }
+
+    .hero-feature {
+        gap: 5px;
+    }
+
+    .feature-text strong {
+        font-size: 9px;
+    }
+
+    .feature-text small {
+        font-size: 8px;
+    }
+
+    .prescription-card {
+        width: 145px;
+        right: 0;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-container {
+        width: 92%;
+
+        min-height: auto;
+
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-features {
+        flex-wrap: wrap;
+
+        gap: 16px 22px;
+    }
+
+    .hero-image-area {
+        width: 100%;
+
+        height: 350px;
+
+        min-height: 350px;
+    }
+
+    .hero-image {
+        right: 0;
+
+        width: 100%;
+    }
+
+    .prescription-card {
+        right: 10px;
+        bottom: 20px;
+
+        width: 160px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .hero-title {
+        font-size: 33px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .hero-features {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 15px;
+    }
+
+    .hero-feature:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .hero-image-area {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .prescription-card {
+        width: 150px;
+
+        right: 5px;
+        bottom: 15px;
+    }
+
+}
 /* =========================================================
    SMALL MOBILE
    ========================================================= */
@@ -855,3 +1537,10 @@ input {
     }
 
 }
+
+
+
+        
+    
+
+   
