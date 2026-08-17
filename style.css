@@ -1,0 +1,857 @@
+/* =========================================================
+   PHARMACARE
+   PART 1 : HEADER + NAVIGATION
+   ========================================================= */
+
+
+/* =========================================================
+   BASIC RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #151515;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   COLOR VARIABLES
+   ========================================================= */
+
+:root {
+    --green: #078b2d;
+    --green-dark: #067a27;
+    --green-light: #eaf7ee;
+
+    --black: #151515;
+    --text-gray: #555555;
+    --light-gray: #f7f8f7;
+    --border: #e6e9e6;
+
+    --container-width: 890px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    width: 100%;
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   TOP GREEN BAR
+   ========================================================= */
+
+.top-bar {
+    width: 100%;
+    height: 30px;
+    background: #078b2d;
+    color: #ffffff;
+}
+
+.top-bar-container {
+    width: 90%;
+    max-width: var(--container-width);
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+.top-icon {
+    font-size: 10px;
+    line-height: 1;
+}
+
+.phone-icon {
+    font-size: 14px;
+    transform: rotate(-20deg);
+    display: inline-block;
+}
+
+
+/* =========================================================
+   MAIN HEADER
+   ========================================================= */
+
+.main-header {
+    width: 100%;
+    height: 72px;
+    background: #ffffff;
+}
+
+.header-container {
+    width: 90%;
+    max-width: var(--container-width);
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   BRAND / LOGO
+   ========================================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    min-width: 220px;
+}
+
+
+/* Logo container */
+
+.brand-logo {
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+
+    margin-right: 8px;
+}
+
+
+/* Green medical cross */
+
+.logo-cross {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    left: 2px;
+    top: 2px;
+
+    background: var(--green);
+
+    border-radius: 5px;
+}
+
+
+/* Vertical part of cross */
+
+.logo-cross span:first-child {
+    position: absolute;
+
+    width: 9px;
+    height: 28px;
+
+    left: 10.5px;
+    top: 1px;
+
+    background: #ffffff;
+
+    border-radius: 2px;
+}
+
+
+/* Horizontal part of cross */
+
+.logo-cross span:last-child {
+    position: absolute;
+
+    width: 28px;
+    height: 9px;
+
+    left: 1px;
+    top: 10.5px;
+
+    background: #ffffff;
+
+    border-radius: 2px;
+}
+
+
+/* Small green accent */
+
+.brand-logo::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    right: 0;
+    bottom: 1px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+}
+
+
+/* Brand text */
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-name {
+    color: #203b2a;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+}
+
+.brand-name span {
+    color: var(--green);
+}
+
+.brand-tagline {
+    margin-top: 2px;
+
+    color: #666666;
+
+    font-size: 8px;
+    line-height: 11px;
+
+    letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.main-navigation {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+}
+
+.nav-link {
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: #171717;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+/* Navigation hover */
+
+.nav-link:hover {
+    color: var(--green);
+}
+
+
+/* Active Home */
+
+.nav-link.active {
+    color: var(--green);
+    font-weight: 600;
+}
+
+
+/* Green underline */
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 14px;
+
+    height: 2px;
+
+    background: var(--green);
+
+    border-radius: 3px;
+}
+
+
+/* =========================================================
+   SEARCH ROW
+   ========================================================= */
+
+.search-row {
+    width: 100%;
+    height: 68px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.search-container {
+    width: 90%;
+    max-width: var(--container-width);
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   SEARCH BOX
+   ========================================================= */
+
+.search-box {
+    height: 38px;
+
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    background: #fafafa;
+
+    border: 1px solid #e4e7e4;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* Search icon area */
+
+.search-icon {
+    width: 42px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Magnifying glass */
+
+.search-icon span {
+    width: 13px;
+    height: 13px;
+
+    border: 1.5px solid #777777;
+
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.search-icon span::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 1.5px;
+
+    background: #777777;
+
+    right: -4px;
+    bottom: -2px;
+
+    transform: rotate(45deg);
+
+    border-radius: 2px;
+}
+
+
+/* Search input */
+
+.search-box input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #222222;
+
+    font-size: 11px;
+}
+
+.search-box input::placeholder {
+    color: #999999;
+}
+
+
+/* Search button */
+
+.search-button {
+    width: 40px;
+    height: 100%;
+
+    border: none;
+
+    background: var(--green);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+/* Search button icon */
+
+.search-button-icon {
+    width: 12px;
+    height: 12px;
+
+    border: 1.5px solid #ffffff;
+
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.search-button-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 1.5px;
+
+    background: #ffffff;
+
+    right: -4px;
+    bottom: -2px;
+
+    transform: rotate(45deg);
+
+    border-radius: 2px;
+}
+
+
+/* Search button hover */
+
+.search-button:hover {
+    background: var(--green-dark);
+}
+
+
+/* =========================================================
+   ACCOUNT AREA
+   ========================================================= */
+
+.account-area {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    white-space: nowrap;
+}
+
+
+/* Login */
+
+.login-link {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #151515;
+
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.login-link:hover {
+    color: var(--green);
+}
+
+
+/* =========================================================
+   USER ICON
+   ========================================================= */
+
+.user-icon {
+    width: 16px;
+    height: 18px;
+
+    position: relative;
+
+    display: inline-block;
+}
+
+
+/* Head */
+
+.user-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    left: 4.5px;
+    top: 0;
+
+    border: 1.3px solid #202020;
+
+    border-radius: 50%;
+}
+
+
+/* Body */
+
+.user-icon span {
+    position: absolute;
+
+    width: 14px;
+    height: 8px;
+
+    left: 1px;
+    bottom: 0;
+
+    border: 1.3px solid #202020;
+
+    border-radius: 8px 8px 3px 3px;
+}
+
+
+/* =========================================================
+   CART BUTTON
+   ========================================================= */
+
+.cart-button {
+    height: 38px;
+
+    padding: 0 13px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #ffffff;
+
+    background: var(--green);
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    transition: background 0.2s ease;
+}
+
+.cart-button:hover {
+    background: var(--green-dark);
+}
+
+
+/* =========================================================
+   CART ICON
+   ========================================================= */
+
+.cart-icon {
+    width: 17px;
+    height: 16px;
+
+    position: relative;
+
+    display: inline-block;
+}
+
+
+/* Cart basket */
+
+.cart-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 8px;
+
+    left: 3px;
+    top: 4px;
+
+    border: 1.4px solid #ffffff;
+
+    border-top: none;
+
+    transform: skew(-8deg);
+
+    border-radius: 1px 1px 3px 3px;
+}
+
+
+/* Cart handle */
+
+.cart-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 5px;
+
+    left: 0;
+    top: 1px;
+
+    border-top: 1.4px solid #ffffff;
+
+    transform: rotate(12deg);
+}
+
+
+/* Cart wheels */
+
+.cart-icon span::before,
+.cart-icon span::after {
+    content: "";
+
+    position: absolute;
+
+    width: 2.5px;
+    height: 2.5px;
+
+    bottom: 0;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+}
+
+.cart-icon span::before {
+    left: 5px;
+}
+
+.cart-icon span::after {
+    right: 0;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    :root {
+        --container-width: 92%;
+    }
+
+    .main-navigation {
+        gap: 14px;
+    }
+
+    .nav-link {
+        font-size: 9px;
+    }
+
+    .brand {
+        min-width: 190px;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .account-area {
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .top-bar {
+        height: 28px;
+    }
+
+    .top-bar-container {
+        width: 92%;
+        gap: 12px;
+    }
+
+    .top-item {
+        font-size: 8px;
+    }
+
+    .main-header {
+        height: auto;
+        padding: 14px 0;
+    }
+
+    .header-container {
+        width: 92%;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .brand {
+        min-width: auto;
+    }
+
+    .main-navigation {
+        width: 100%;
+
+        height: auto;
+
+        overflow-x: auto;
+
+        gap: 20px;
+
+        padding-bottom: 4px;
+    }
+
+    .nav-link {
+        height: 30px;
+
+        font-size: 10px;
+    }
+
+    .nav-link.active::after {
+        bottom: 0;
+    }
+
+    .search-row {
+        height: auto;
+
+        padding: 12px 0;
+    }
+
+    .search-container {
+        width: 92%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .search-box {
+        width: 100%;
+        height: 40px;
+
+        flex: none;
+    }
+
+    .account-area {
+        width: 100%;
+
+        justify-content: flex-end;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .top-bar-container {
+        justify-content: center;
+    }
+
+    .top-item:first-child {
+        display: none;
+    }
+
+    .brand-name {
+        font-size: 19px;
+    }
+
+    .main-navigation {
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: 9px;
+    }
+
+    .login-link {
+        font-size: 9px;
+    }
+
+    .cart-button {
+        height: 36px;
+        padding: 0 11px;
+    }
+
+}
