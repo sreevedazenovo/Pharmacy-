@@ -2564,7 +2564,576 @@ input {
 
        }
 
-        
+      /* =========================================================
+   PART 4 : ABOUT US + WHY CHOOSE US
+   ========================================================= */
+
+
+/* =========================================================
+   ABOUT SECTION
+   ========================================================= */
+
+.about-section {
+    width: 100%;
+
+    background: #ffffff;
+
+    padding-top: 4px;
+    padding-bottom: 30px;
+}
+
+
+/* =========================================================
+   ABOUT CONTAINER
+   ========================================================= */
+
+.about-container {
+    width: 90%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        0.72fr 1.28fr;
+
+    gap: 34px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT ABOUT CONTENT
+   ========================================================= */
+
+.about-content {
+    padding: 3px 0 0 4px;
+}
+
+
+/* =========================================================
+   ABOUT EYEBROW
+   ========================================================= */
+
+.about-eyebrow {
+    color: var(--green);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   ABOUT HEADING
+   ========================================================= */
+
+.about-content h2 {
+    color: #141719;
+
+    font-size: 22px;
+
+    line-height: 1.18;
+
+    letter-spacing: -0.5px;
+
+    font-weight: 700;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================================================
+   ABOUT PARAGRAPHS
+   ========================================================= */
+
+.about-content p {
+    color: #4f5454;
+
+    font-size: 9px;
+
+    line-height: 1.65;
+
+    max-width: 250px;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================================================
+   KNOW MORE BUTTON
+   ========================================================= */
+
+.about-button {
+    width: 145px;
+    height: 32px;
+
+    margin-top: 7px;
+
+    padding: 0 10px 0 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border: 1px solid #6bb781;
+
+    border-radius: 4px;
+
+    color: #147c31;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.about-button:hover {
+    background: var(--green);
+
+    color: #ffffff;
+}
+
+.about-arrow {
+    font-size: 16px;
+
+    font-weight: 300;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US BOX
+   ========================================================= */
+
+.why-choose-box {
+    min-height: 205px;
+
+    padding: 21px 25px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbfcfb 0%,
+            #f8faf8 100%
+        );
+
+    border-radius: 9px;
+
+    border: 1px solid #f0f2f0;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.025);
+}
+
+
+/* =========================================================
+   WHY HEADING
+   ========================================================= */
+
+.why-heading {
+    color: var(--green);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   BENEFITS GRID
+   ========================================================= */
+
+.benefits-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    column-gap: 35px;
+
+    row-gap: 20px;
+}
+
+
+/* =========================================================
+   BENEFIT ITEM
+   ========================================================= */
+
+.benefit-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   BENEFIT ICON
+   ========================================================= */
+
+.benefit-icon {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--green);
+}
+
+
+/* =========================================================
+   GENUINE PRODUCTS ICON
+   ========================================================= */
+
+.products-benefit {
+    border: 1.3px solid var(--green);
+
+    border-radius: 5px;
+}
+
+.products-benefit::before {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    left: 7px;
+    top: 4px;
+
+    border: 1px solid var(--green);
+
+    border-radius: 2px;
+}
+
+.products-benefit span {
+    font-size: 8px;
+
+    font-weight: 700;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   DELIVERY ICON
+   ========================================================= */
+
+.delivery-benefit {
+    width: 26px;
+    height: 16px;
+
+    margin-top: 3px;
+
+    border: 1.4px solid var(--green);
+
+    border-radius: 3px;
+}
+
+.delivery-benefit::before {
+    content: "";
+
+    position: absolute;
+
+    right: -7px;
+    bottom: -1px;
+
+    width: 8px;
+    height: 9px;
+
+    border: 1.4px solid var(--green);
+
+    border-left: none;
+
+    border-radius: 0 3px 3px 0;
+}
+
+.delivery-benefit::after {
+    content: "";
+
+    position: absolute;
+
+    left: 4px;
+    bottom: -6px;
+
+    width: 4px;
+    height: 4px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    box-shadow:
+        15px 0 0 var(--green);
+}
+
+
+/* =========================================================
+   RETURNS ICON
+   ========================================================= */
+
+.returns-benefit {
+    border: 1.3px solid var(--green);
+
+    border-radius: 5px;
+}
+
+.returns-benefit span {
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   PAYMENT ICON
+   ========================================================= */
+
+.payment-benefit {
+    border: 1.3px solid var(--green);
+
+    border-radius: 5px;
+}
+
+.payment-benefit::before {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 5px;
+
+    left: 7px;
+    top: -4px;
+
+    border: 1.3px solid var(--green);
+
+    border-bottom: none;
+
+    border-radius: 6px 6px 0 0;
+}
+
+.payment-benefit span {
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SUPPORT ICON
+   ========================================================= */
+
+.support-benefit {
+    border: 1.3px solid var(--green);
+
+    border-radius: 50%;
+}
+
+.support-benefit::before {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 10px;
+
+    left: -3px;
+    top: 8px;
+
+    border: 1.3px solid var(--green);
+
+    border-radius: 4px;
+}
+
+.support-benefit::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 10px;
+
+    right: -3px;
+    top: 8px;
+
+    border: 1.3px solid var(--green);
+
+    border-radius: 4px;
+}
+
+.support-benefit span {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BEST PRICE ICON
+   ========================================================= */
+
+.price-benefit {
+    border: 1.3px solid var(--green);
+
+    border-radius: 5px;
+}
+
+.price-benefit span {
+    color: var(--green);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   BENEFIT TEXT
+   ========================================================= */
+
+.benefit-content {
+    min-width: 0;
+}
+
+.benefit-content h3 {
+    color: #202020;
+
+    font-size: 9px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+}
+
+.benefit-content p {
+    color: #646868;
+
+    font-size: 8px;
+
+    line-height: 1.45;
+
+    max-width: 125px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-container {
+        width: 92%;
+
+        gap: 22px;
+    }
+
+    .why-choose-box {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .benefits-grid {
+        column-gap: 18px;
+    }
+
+    .benefit-item {
+        gap: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-section {
+        padding-top: 5px;
+        padding-bottom: 35px;
+    }
+
+    .about-container {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .about-content h2 {
+        font-size: 25px;
+    }
+
+    .about-content p {
+        font-size: 10px;
+
+        max-width: 100%;
+    }
+
+    .why-choose-box {
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+    .benefits-grid {
+        column-gap: 20px;
+        row-gap: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+
+        row-gap: 18px;
+    }
+
+    .benefit-content p {
+        max-width: 230px;
+    }
+
+}  
     
 
    
